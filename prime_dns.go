@@ -1,6 +1,10 @@
+// Package prime_dns provides a way to generate a slice of prime numbers
 package prime_dns
 
-func Primes_dns(limit int) []int {
+// GetSlice will return a slice containing all the prime numbers
+// from 2 to limit.
+// It returns the slice
+func GetSlice(limit int) []int {
 	limit = limit + 1
 	// creates a slice of false with length of limit
 	bools := make([]bool, limit)
